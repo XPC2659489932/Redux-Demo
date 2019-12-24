@@ -23,7 +23,12 @@ class Home extends PureComponent {
   render() {
     console.log(this.props.home)
     return (
-      <div>home</div>
+      <div>
+        <div>主页面</div>
+        <input type="text" placeholder="请输入用户名"/>
+        <input type="passward" placeholder="请输入密码"/>
+        <button>Button</button>
+     </div>
     );
   }
 }

@@ -5,7 +5,7 @@ import Home from './pages/home'
 class App extends Component {
   render() {
     return (
-      <Home>111</Home>
+      <Home></Home>
     );
   }
 }

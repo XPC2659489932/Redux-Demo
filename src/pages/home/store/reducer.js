@@ -7,9 +7,17 @@ const defaultState = {
 export default (state=defaultState, action) => {
     switch(action.type){
         case GET_HOME_DATA: 
-          return {
-            home:[...state.home,...action.home]
-          } 
+          if(!!state.home){
+	        return {
+	          home: [...state.home,...action.home]
+	        }
+	      }
+	      else{
+	        return {
+	          ...state,
+	          home: [...action.home]
+	        }
+	      }
         default:
           return state;
     }
